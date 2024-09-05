@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct Meal: Identifiable, Decodable {
+    var idMeal: String
+    var strMeal: String
+    var strMealThumb: String?
+    
+    var id: String {
+        return idMeal
+    }
+}
